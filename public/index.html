@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Share By Tech Anirudh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+        font-size: 25px;
+        height: 50vh;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+    .upload-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .upload-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .upload-button:hover {
+      background-color: #2980b9;
+    }
+    .portfolio-link {
+      color: #3498db;
+      text-decoration: none;
+      margin-top: 20px;
+      display: block;
+    }
+    .portfolio-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Quick Share</h1>
+    <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/*" required>
+      <button type="submit" class="upload-button">Upload Image</button>
+    </form>
+    <a href="https://anirudhvijay.netlify.app/" class="portfolio-link">Visit My Portfolio</a>
+  </div>
+</body>
+</html>

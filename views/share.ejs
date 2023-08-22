@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUICK SHARE BY TECH ANIRUDH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 50%;
+      height: 55%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .preview {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 50%;
+      height: 50%;
+    }
+
+    .preview img{
+        width: 100%;
+        height: 100%;
+    }
+    .download-button {
+        margin-bottom: 10px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    .download-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="preview">
+      <img src="<%= image %>" alt="Image Preview" width="100">
+    </div>
+    <p>Click the button below to download the image:</p>
+    <a href="<%= image %>" download class="download-button">Download Image</a>
+    <a href="https://anirudhvijay.netlify.app/" download class="download-button">Visit Tech Anirudh Portfolio</a>
+  </div>
+</body>
+</html>
